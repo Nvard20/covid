@@ -34,7 +34,7 @@ const Home = () => {
     let recovered = '';
     let today_confirmed = '';
     let today_deaths = "";
-    if(data !== undefined){
+    if(data !== undefined ){
           name = data.name;
           confirmed = data.latest_data.confirmed;
           recovered = data.latest_data.recovered;
@@ -44,14 +44,14 @@ const Home = () => {
           today_deaths = data.today.deaths;
 
     }
-   
+
     return (
         <div className='container'>
                <div className='cv'>Covid 19</div>
            <input type='text' value={title}
             onChange ={Change} className='inp'
             />
-         
+           
             <div className='content'>
                 <div className='all'>
                     
