@@ -48,10 +48,11 @@ const Home = () => {
     return (
         <div className='container'>
                <div className='cv'>Covid 19</div>
+               <p>You can write only countries code, for example fr - France</p>
            <input type='text' value={title}
             onChange ={Change} className='inp'
             />
-           
+         
             <div className='content'>
                 <div className='all'>
                     
